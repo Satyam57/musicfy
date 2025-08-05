@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Satyam-Prakash">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <title>Music Player</title>
+</head>
+
+<body>
+  <div id="satyamlogo" style="
+      position: fixed;
+      bottom: 25%;
+      right: 3%;
+      color: red;
+      font-family: Arial,sans-serif;
+      font-weight: bolder;
+      background-color: rgba(0, 0, 0, 0);
+      z-index: 10;
+      ">
+    @satyam
+  </div>
+  <div>
+    <nav>
+      <div id="logo">
+        <a href="#"><img src="Images/logo.png"></a>
+      </div>
+      <div id="bar-links">
+        <div><a id="Home" href="#">Home</a></div>
+        <div><a id="favourites" href="#">Favourites</a></div>
+      </div>
+
+      <div id="bar-right">
+        <div id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="search" placeholder="Search">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+        <div id="bell">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+        <div id="login">
+          <img id="logged-in" src="images/logged-in.jpg">
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+      <div id="part-left">
+        <div id="posters-area">
+          <div id="poster">
+            <input type="radio" name="img-sel" id="pt-1">
+            <input type="radio" name="img-sel" id="pt-2">
+            <input type="radio" name="img-sel" id="pt-3" checked>
+            <input type="radio" name="img-sel" id="pt-4">
+            <input type="radio" name="img-sel" id="pt-5">
+            <div id="i-1">
+              <label for="pt-1" id="i-1">
+                <img src="Images/crousel-img-1.jpg">
+              </label>
+            </div>
+            <div id="i-2">
+              <label for="pt-2" id="i-2">
+                <img src="Images/crousel-img-2.jpg">
+              </label>
+            </div>
+            <div id="i-3">
+              <label for="pt-3" id="i-3">
+                <img src="Images/crousel-img-3.jpg">
+              </label>
+            </div>
+            <div id="i-4">
+              <label for="pt-4" id="i-4">
+                <img src="Images/crousel-img-4.jpg">
+              </label>
+            </div>
+            <div id="i-5">
+              <label for="pt-5" id="i-5">
+                <img src="Images/crousel-img-5.jpg">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="release">
+          <p>Latest Release</p>
+          <div class="release-content">
+            <div id="r-1">
+              <div class="image-play-pause">
+                <img src="Images/guitar.jpg">
+                <a href="#r-play-1">
+                  <i id="r-pause-1" class="fa-solid fa-pause"></i>
+                </a>
+                <a href="#r-pause-1">
+                  <i id="r-play-1" class="fa-solid fa-play"></i>
+                </a>
+              </div>
+
+              <div class="r-text">
+                <div class="r-name">Senorita</div>
+                <div class="r-date">June 21, 2019</div>
+              </div>
+
+              <div alss="r-dot-time">
+                <div class="r-dot">
+                  <input type="checkbox" id="s1">
+                  <label for="s1">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </label>
+
+                  <div class="r-drop-menu">
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-play"></i></div>
+                        <div>Play Now</div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-plus"></i></div>
+                        <div>Add to Queue</div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-list-check"></i></div>
+                        <div>
+                          Add to Favourites
+                        </div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-circle-info"></i></div>
+                        <div>Get info</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="r-time">4:44</div>
+              </div>
+            </div>
+
+            <div id="r-2">
+              <div class="image-play-pause">
+                <img src="Images/guitar.jpg">
+                <a href="#r-play-2">
+                  <i id="r-pause-2" class="fa-solid fa-pause"></i>
+                </a>
+                <a href="#r-pause-2">
+                  <i id="r-play-2" class="fa-solid fa-play"></i>
+                </a>
+              </div>
+
+              <div class="r-text">
+                <div class="r-name">Senorita</div>
+                <div class="r-date">June 21, 2019</div>
+              </div>
+
+              <div alss="r-dot-time">
+                <div class="r-dot">
+                  <input type="checkbox" id="s2">
+                  <label for="s2">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </label>
+
+                  <div class="r-drop-menu">
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-play"></i></div>
+                        <div>Play Now</div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-plus"></i></div>
+                        <div>Add to Queue</div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-list-check"></i></div>
+                        <div>
+                          Add to Favourites
+                        </div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-circle-info"></i></div>
+                        <div>Get info</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="r-time">4:44</div>
+              </div>
+            </div>
+
+            <div id="r-3">
+              <div class="image-play-pause">
+                <img src="Images/guitar.jpg">
+                <a href="#r-play-3">
+                  <i id="r-pause-3" class="fa-solid fa-pause"></i>
+                </a>
+                <a href="#r-pause-3">
+                  <i id="r-play-3" class="fa-solid fa-play"></i>
+                </a>
+              </div>
+
+              <div class="r-text">
+                <div class="r-name">Senorita</div>
+                <div class="r-date">June 21, 2019</div>
+              </div>
+
+              <div alss="r-dot-time">
+                <div class="r-dot">
+                  <input type="checkbox" id="s3">
+                  <label for="s3">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </label>
+
+                  <div class="r-drop-menu">
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-play"></i></div>
+                        <div>Play Now</div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-plus"></i></div>
+                        <div>Add to Queue</div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-list-check"></i></div>
+                        <div>
+                          Add to Favourites
+                        </div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-circle-info"></i></div>
+                        <div>Get info</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="r-time">4:44</div>
+              </div>
+            </div>
+
+            <div id="r-4">
+              <div class="image-play-pause">
+                <img src="Images/guitar.jpg">
+                <a href="#r-play-4">
+                  <i id="r-pause-4" class="fa-solid fa-pause"></i>
+                </a>
+                <a href="#r-pause-4">
+                  <i id="r-play-4" class="fa-solid fa-play"></i>
+                </a>
+              </div>
+
+              <div class="r-text">
+                <div class="r-name">Senorita</div>
+                <div class="r-date">June 21, 2019</div>
+              </div>
+
+              <div alss="r-dot-time">
+                <div class="r-dot">
+                  <input type="checkbox" id="s4">
+                  <label for="s4">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </label>
+
+                  <div class="r-drop-menu">
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-play"></i></div>
+                        <div>Play Now</div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-plus"></i></div>
+                        <div>Add to Queue</div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-list-check"></i></div>
+                        <div>
+                          Add to Favourites
+                        </div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <a href="#">
+                        <div><i class="fa-solid fa-circle-info"></i></div>
+                        <div>Get info</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="r-time">4:44</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
